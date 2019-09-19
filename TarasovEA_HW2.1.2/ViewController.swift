@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var greenLight: UIView!
     @IBOutlet weak var changeTraficButton: UIButton!
     
+    var step = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +31,7 @@ class ViewController: UIViewController {
         
     }
     
-    var step = 0
+    
 
     @IBAction func changeTraficLight() {
         changeTraficButton.setTitle("NEXT", for: .normal)
